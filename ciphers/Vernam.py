@@ -1,5 +1,4 @@
 def TextToBin(text):
-    #return ''.join(map(lambda x: format(x,'b'),bytearray(text,'utf-8')))
     return bin(int.from_bytes(text.encode(),'big')).replace('b','')
 def BinToText(binN):
     n = int(binN,2)
